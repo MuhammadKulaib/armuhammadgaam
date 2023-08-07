@@ -1,0 +1,36 @@
+/* RTL Support */
+
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.jazzy-nav-sidebar .jazzy-nav-item {
+    text-align: right;
+}
+.content-wrapper{
+    margin-right: 250px !important;
+}
+/*@media (min-width: 768px) {*/
+/*    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {*/
+/*        transition: margin-right .3s ease-in-out;*/
+/*        margin-right: 250px !important;*/
+/*    }*/
+/*}*/
+.main-sidebar, .main-sidebar::before {
+    transition: margin-right .3s ease-in-out,width .3s ease-in-out;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+.jazzy-nav-sidebar .jazzy-nav-item .fa-fw {
+    margin-right: 0;
+    margin-left: 10px;
+}

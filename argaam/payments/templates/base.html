@@ -1,0 +1,247 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir='rtl'>
+<head>
+    <link rel="stylesheet" type="text/css" href= "{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href= "{% static 'css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" type="text/css" href= "{% static 'css/font-awesome.min.css' %}">
+{#    <link rel="stylesheet" type="text/css" href= "{% static 'css/app_style.css' %}">#}
+
+    <style>
+        .bg-orange{
+            background: #ee7b0b;
+        }
+
+
+    </style>
+{#    <script src="{% static 'js/tailwind.js' %}"></script>#}
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="nav clear" rel-locked="no">
+
+    <nav>
+        <ul id="nav">
+                <li id="mnu_الأخبار" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        الأخبار
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/article/argaamfavorite" href="/ar/article/argaamfavorite" rel-link="/ar/article/argaamfavorite" class="  "><i class="arrow "></i>مختارات أرقام  </a>
+                                    <a menu-item="/ar/markets/international" href="/ar/markets/international" rel-link="/ar/markets/international" class="  "><i class="arrow "></i>الاسواق العالمية  </a>
+                                    <a menu-item="/ar/realestate" href="/ar/realestate" rel-link="/ar/realestate" class="  "><i class="arrow "></i>القطاع العقاري  </a>
+                                    <a menu-item="/ar/article/argaam-report" href="/ar/article/argaam-report" rel-link="/ar/article/argaam-report" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>تقارير أرقام  </a>
+                                    <a menu-item="/ar/company/disclosure/sectionid/245/marketid/3/pageno" href="/ar/company/disclosure/sectionid/245/marketid/3/pageno" rel-link="/ar/company/disclosure/sectionid/245/marketid/3/pageno" class="  "><i class="arrow "></i>الإفصاحات  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_قطاعات" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        قطاعات
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/sector/bank/sectorid/4" href="/ar/sector/bank/sectorid/4" rel-link="/ar/sector/bank/sectorid/4" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>البنوك  </a>
+                                    <a menu-item="/ar/sector/insurance/sectorid/2" href="/ar/sector/insurance/sectorid/2" rel-link="/ar/sector/insurance/sectorid/2" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>التأمين  </a>
+                                    <a menu-item="/ar/sector/cement/sectorid/6" href="/ar/sector/cement/sectorid/6" rel-link="/ar/sector/cement/sectorid/6" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الإسمنت  </a>
+                                    <a menu-item="/ar/sector/petrochemicals/sectorid/33" href="/ar/sector/petrochemicals/sectorid/33" rel-link="/ar/sector/petrochemicals/sectorid/33" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i> البتروكيماويات  </a>
+                                    <a menu-item="/ar/sector/healthcare/sectorid/218/true" href="/ar/sector/healthcare/sectorid/218/true" rel-link="/ar/sector/healthcare/sectorid/218/true" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الصحة  </a>
+                                    <a menu-item="/ar/sector/telecom/sectorid/52" href="/ar/sector/telecom/sectorid/52" rel-link="/ar/sector/telecom/sectorid/52" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الإتصالات وتقنية المعلومات  </a>
+                                    <a menu-item="/ar/sector/reits/sectorid/78" href="/ar/sector/reits/sectorid/78" rel-link="/ar/sector/reits/sectorid/78" class="  "><i class="arrow "></i>الصناديق العقارية المتداولة (ريتس)  </a>
+                                    <a menu-item="/ar/sector/real-estate-development/sectorid/44" href="/ar/sector/real-estate-development/sectorid/44" rel-link="/ar/sector/real-estate-development/sectorid/44" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>التطوير العقاري  </a>
+                                    <a menu-item="/ar/sector/hotels-and-tourism/sectorid/36" href="/ar/sector/hotels-and-tourism/sectorid/36" rel-link="/ar/sector/hotels-and-tourism/sectorid/36" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الفنادق والسياحة  </a>
+                                    <a menu-item="/ar/market/commodityprices" href="/ar/market/commodityprices" rel-link="/ar/market/commodityprices" class="  "><i class="arrow "></i>السلع والمعادن  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_معلومات الشركات" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        معلومات الشركات
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/company/companies-prices" href="/ar/company/companies-prices" rel-link="/ar/company/companies-prices" class="  "><i class="arrow "></i>الأسعار  </a>
+                                    <a menu-item="/ar/monitors/market-analytics/3" href="/ar/monitors/market-analytics/3" rel-link="/ar/monitors/market-analytics/3" class="  "><i class="arrow "></i>بيانات السوق  </a>
+                                    <a menu-item="/ar/company/calendar/details/marketid/3" href="/ar/company/calendar/details/marketid/3" rel-link="/ar/company/calendar/details/marketid/3" class="  "><i class="arrow "></i>المفكرة  </a>
+                                    <a menu-item="/ar/company/companies-volume/3" href="/ar/company/companies-volume/3" rel-link="/ar/company/companies-volume/3" class="  "><i class="arrow "></i>مراقبة احجام التداول  </a>
+                                    <a menu-item="/ar/monitors/market-ownership/3" href="/ar/monitors/market-ownership/3" rel-link="/ar/monitors/market-ownership/3" class="  "><i class="arrow "></i>ملكية المستثمرين الأجانب
+
+  <strong class="company-new-update">جديد</strong></a>
+                                    <a menu-item="/ar/company/derivatives-prices" href="/ar/company/derivatives-prices" rel-link="/ar/company/derivatives-prices" class="  "><i class="arrow "></i>المشتقات  </a>
+                                    <a menu-item="/ar/disclosures/mergers-acquisitions/3" href="/ar/disclosures/mergers-acquisitions/3" rel-link="/ar/disclosures/mergers-acquisitions/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الاندماج والاستحواذ  </a>
+                                    <a menu-item="/ar/company/shariahcompanies/3/3/3" href="/ar/company/shariahcompanies/3/3/3" rel-link="/ar/company/shariahcompanies/3/3/3" class="  "><i class="arrow "></i>الأسهم الشرعية  </a>
+                                    <a menu-item="/ar/shareholder/free-floated-shares" href="/ar/shareholder/free-floated-shares" rel-link="/ar/shareholder/free-floated-shares" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الأسهم الحرة  </a>
+                                    <a menu-item="/ar/company/top-rank-companies/market/3/market-value" href="/ar/company/top-rank-companies/market/3/market-value" rel-link="/ar/company/top-rank-companies/market/3/market-value" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>أرقام 100  </a>
+                                    <a menu-item="/ar/shareholder/shareholders-history/date/marketid/3" href="/ar/shareholder/shareholders-history/date/marketid/3" rel-link="/ar/shareholder/shareholders-history/date/marketid/3" class="  "><i class="arrow "></i>قائمة كبار الملاك  </a>
+                                    <a menu-item="/ar/shareholder/shareholders-history-deals?marketid=3&amp;pageno=0" href="/ar/shareholder/shareholders-history-deals?marketid=3&amp;pageno=0" rel-link="/ar/shareholder/shareholders-history-deals?marketid=3&amp;pageno=0" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الصفقات الخاصة  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_البيانات المالية" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        البيانات المالية
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/company/financial-pdf/3" href="/ar/company/financial-pdf/3" rel-link="/ar/company/financial-pdf/3" class="  "><i class="arrow "></i>القوائم المالية   </a>
+                                    <a menu-item="/ar/company/financial-result/market/3/fptype/3/2023/3" href="/ar/company/financial-result/market/3/fptype/3/2023/3" rel-link="/ar/company/financial-result/market/3/fptype/3/2023/3" class="  "><i class="arrow "></i>النتائج المالية  <strong class="company-new-update">محدث‎</strong></a>
+                                    <a menu-item="/ar/company/financial-result-charts/latest" href="/ar/company/financial-result-charts/latest" rel-link="/ar/company/financial-result-charts/latest" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>النتائج المالية بالتشارت  <strong class="company-new-update">جديد</strong></a>
+                                    <a menu-item="/ar/company/earnings-call/3/2023" href="/ar/company/earnings-call/3/2023" rel-link="/ar/company/earnings-call/3/2023" class="  "><i class="arrow "></i>عرض المستثمرين  <strong class="company-new-update">محدث‎</strong></a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_المؤشرات المالية" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        المؤشرات المالية
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/company/advance/analysis" href="/ar/company/advance/analysis" rel-link="/ar/company/advance/analysis" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>تحليل الشركات المتقدم  </a>
+                                    <a menu-item="/ar/monitors/ratios-summary/priceearning-summary/quarter/3" href="/ar/monitors/ratios-summary/priceearning-summary/quarter/3" rel-link="/ar/monitors/ratios-summary/priceearning-summary/quarter/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>مكرر الأرباح  </a>
+                                    <a menu-item="/ar/monitors/ratios-summary/returnonownerequity/3" href="/ar/monitors/ratios-summary/returnonownerequity/3" rel-link="/ar/monitors/ratios-summary/returnonownerequity/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>العائد على حقوق المساهمين  </a>
+                                    <a menu-item="/ar/monitors/ratios-summary/bookvalue/3" href="/ar/monitors/ratios-summary/bookvalue/3" rel-link="/ar/monitors/ratios-summary/bookvalue/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>القيمة الدفترية  </a>
+                                    <a menu-item="/ar/monitors/ratios-summary/accumulated-losses/3" href="/ar/monitors/ratios-summary/accumulated-losses/3" rel-link="/ar/monitors/ratios-summary/accumulated-losses/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الخسائر المتراكمة  </a>
+                                    <a menu-item="/ar/monitors/ratios-summary/revenueandprofitgrowth/3" href="/ar/monitors/ratios-summary/revenueandprofitgrowth/3" rel-link="/ar/monitors/ratios-summary/revenueandprofitgrowth/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>المبيعات والربحية  </a>
+                                    <a menu-item="/ar/disclosures/dividends/previous-year" href="/ar/disclosures/dividends/previous-year" rel-link="/ar/disclosures/dividends/previous-year" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>توزيعات الارباح النقدية   </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_المحللون" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        المحللون
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/monitors/analyst-opinion" href="/ar/monitors/analyst-opinion" rel-link="/ar/monitors/analyst-opinion" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>آراء المحللين  </a>
+                                    <a menu-item="/ar/monitors/analyst-estimates" href="/ar/monitors/analyst-estimates" rel-link="/ar/monitors/analyst-estimates" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>توقعات المحللين  </a>
+                                    <a menu-item="/ar/monitors/research-articles" href="/ar/monitors/research-articles" rel-link="/ar/monitors/research-articles" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الأبحاث والتقارير  </a>
+                                    <a menu-item="/ar/poll/investor/opinions/3" href="/ar/poll/investor/opinions/3" rel-link="/ar/poll/investor/opinions/3" class="  "><i class="arrow "></i>آراء المستثمرين  </a>
+                                    <a menu-item="/ar/poll/investor/opinions/comments/3/2101/3" href="/ar/poll/investor/opinions/comments/3/2101/3" rel-link="/ar/poll/investor/opinions/comments/3/2101/3" class="  "><i class="arrow "></i>المناقشات  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_الاكتتابات" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        الاكتتابات
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/disclosures/ipo" href="/ar/disclosures/ipo" rel-link="/ar/disclosures/ipo" class="  "><i class="arrow "></i>متابعة الاكتتابات  </a>
+                                    <a menu-item="/ar/disclosures/analytics/ipo/startdate/sdate/enddate/edate/marketid/3" href="/ar/disclosures/analytics/ipo/startdate/sdate/enddate/edate/marketid/3" rel-link="/ar/disclosures/analytics/ipo/startdate/sdate/enddate/edate/marketid/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>تحليل الاكتتابات  </a>
+                                    <a menu-item="/ar/prospectuses/ipo/3" href="/ar/prospectuses/ipo/3" rel-link="/ar/prospectuses/ipo/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>نشرات الاصدار  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_المؤشرات الاقتصادية" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        المؤشرات الاقتصادية
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3" href="/ar/facts-statistics/economic-indicators/3" rel-link="/ar/facts-statistics/economic-indicators/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الإقتصاد الكلي  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/50?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/50?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/50?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الميزانية العامة  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/97?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/97?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/97?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>احصاءات النقود  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/21?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/21?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/21?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>النفط والغاز  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/76?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/76?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/76?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الاتصالات  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/112?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/112?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/112?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>التعدين  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/81?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/81?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/81?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الكهرباء  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/57?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/57?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/57?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الصحة  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/91?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/91?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/91?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>التأمين  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/62?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/62?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/62?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الزراعة  </a>
+                                    <a menu-item="/ar/facts-statistics/bank/sector/4" href="/ar/facts-statistics/bank/sector/4" rel-link="/ar/facts-statistics/bank/sector/4" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>البنوك  </a>
+                                    <a menu-item="/ar/facts-statistics/cement/sector/6" href="/ar/facts-statistics/cement/sector/6" rel-link="/ar/facts-statistics/cement/sector/6" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الاسمنت  </a>
+                                    <a menu-item="/ar/sector/all-petrochemicals-products" href="/ar/sector/all-petrochemicals-products" rel-link="/ar/sector/all-petrochemicals-products" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>المنتجات البتروكيماوية  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/60?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/60?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/60?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الصناعة  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_الصناديق" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        الصناديق
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/funds/funds-manager" href="/ar/funds/funds-manager" rel-link="/ar/funds/funds-manager" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>متابعة الصناديق  </a>
+                                    <a menu-item="/ar/facts-statistics/economic-indicators/3/index/19?view=horizontal" href="/ar/facts-statistics/economic-indicators/3/index/19?view=horizontal" rel-link="/ar/facts-statistics/economic-indicators/3/index/19?view=horizontal" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>إحصاءات الصناديق  </a>
+                                    <a menu-item="/ar/funds/funds-analysis" href="/ar/funds/funds-analysis" rel-link="/ar/funds/funds-analysis" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>تحليل الصناديق  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_المشاريع" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        المشاريع
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/disclosures/project-analytics/3" href="/ar/disclosures/project-analytics/3" rel-link="/ar/disclosures/project-analytics/3" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>تحليل المشاريع  </a>
+                                    <a menu-item="/ar/disclosures/projects" href="/ar/disclosures/projects" rel-link="/ar/disclosures/projects" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>متابعة المشاريع  </a>
+                            </li>
+                        </ul>
+                </li>
+                <li id="mnu_رسوم بيانية" onmouseover="javascript:onMenuNavHover(this);" onmouseout="javascript:onMenuOnBlur();" class="fl-menu">
+                    <a menu-item="javascript:void(0)" href="javascript:void(0)" class="">
+                        رسوم بيانية
+                            <i class="arrow"></i>
+                    </a>
+                        <ul class="holder-full lh-norm" style="display: none;" onmouseover="javascript:onSubMenuNavHover();">
+                            <li>
+                                    <a menu-item="/ar/indicator?utm_source=CM_KSA&amp;utm_medium=ar_desktop_header" href="/ar/indicator?utm_source=CM_KSA&amp;utm_medium=ar_desktop_header" rel-link="/ar/indicator?utm_source=CM_KSA&amp;utm_medium=ar_desktop_header" class="  "><i class="arrow "></i>خريطة الرسوم البيانية  </a>
+                                    <a menu-item="/ar/interactive/charts/1/market-indices" href="/ar/interactive/charts/1/market-indices" rel-link="/ar/interactive/charts/1/market-indices" class="  "><i class="arrow "></i>مؤشرات السوق  </a>
+                                    <a menu-item="/ar/interactive/charts/8" href="/ar/interactive/charts/8" rel-link="/ar/interactive/charts/8" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>المؤشرات المالية  </a>
+                                    <a menu-item="/ar/interactive/charts/9" href="/ar/interactive/charts/9" rel-link="/ar/interactive/charts/9" class="  "><i class="arrow "></i>المؤشرات العالمية  </a>
+                                    <a menu-item="/ar/interactive/charts/4" href="/ar/interactive/charts/4" rel-link="/ar/interactive/charts/4" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>المنتجات البتروكيماوية  </a>
+                                    <a menu-item="/ar/interactive/charts/7" href="/ar/interactive/charts/7" rel-link="/ar/interactive/charts/7" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الصناديق  </a>
+                                    <a menu-item="/ar/interactive/charts/6" href="/ar/interactive/charts/6" rel-link="/ar/interactive/charts/6" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>السلع  </a>
+                                    <a menu-item="/ar/interactive/charts/14" href="/ar/interactive/charts/14" rel-link="/ar/interactive/charts/14" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>السلع المحلية  </a>
+                                    <a menu-item="/ar/interactive/charts/11" href="/ar/interactive/charts/11" rel-link="/ar/interactive/charts/11" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>السايبور  </a>
+                                    <a menu-item="/ar/interactive/charts/11/liborrate" href="/ar/interactive/charts/11/liborrate" rel-link="/ar/interactive/charts/11/liborrate" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>اللايبور  </a>
+                                    <a menu-item="/ar/interactive/charts/16" href="/ar/interactive/charts/16" rel-link="/ar/interactive/charts/16" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>منصات النفط  </a>
+                                    <a menu-item="/ar/interactive/charts/10" href="/ar/interactive/charts/10" rel-link="/ar/interactive/charts/10" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>النقل البحري  </a>
+                                    <a menu-item="/ar/interactive/charts/11/reporate" href="/ar/interactive/charts/11/reporate" rel-link="/ar/interactive/charts/11/reporate" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الريبو  </a>
+                                    <a menu-item="/ar/interactive/charts/11/fedrates" href="/ar/interactive/charts/11/fedrates" rel-link="/ar/interactive/charts/11/fedrates" class="lock-menu-icon  "><i class="arrow lock-menu-icon"></i>الفائدة الأمريكية  </a>
+                            </li>
+                        </ul>
+                </li>
+        </ul>
+    </nav>
+</div>
+<div class="main-wrapper" >
+        <!-- Header Block -->
+{#        {% block header %}#}
+{#            {% include 'header.html' %}#}
+{#        {% endblock header %}#}
+
+{#        {% block sidebare %}#}
+{#            {% include 'sidebar.html' %}#}
+{#        {% endblock sidebare %}#}
+        <!-- Header Sidebar -->
+
+        <!-- Header Content -->
+        <div class="page-wrapper p-5 text-right">
+            {% block content %}
+
+        {% endblock content %}
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
+
+
+
